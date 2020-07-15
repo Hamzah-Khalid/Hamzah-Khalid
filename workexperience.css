@@ -1,0 +1,94 @@
+.job{
+    float:left;
+    padding-top: 20px;
+}
+.time{
+    float:left;
+    display:block;
+    padding-top: 40px;
+}
+.description{
+    width: 400px;
+
+}
+.img-company{
+    width: 22%;
+    height:200px;
+    visibility:hidden;
+}
+#argos{
+    display:none;
+}
+#homebase{
+    display:none;
+}
+#zurich{
+    display:none;
+}
+.WEbuttons{
+    width:10%;
+    float: left;
+    display:none;
+    padding-top: 50px;
+}
+.button_jobs{
+    width:150px;
+    height:55px;
+    padding-left: 0%;
+    background-color: none;
+    color: aquamarine;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  rgb(51, 51, 51);
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 2px;
+    cursor: pointer;
+    padding-top: 0px;
+}
+.button_jobs:hover{
+    background-color:grey;
+    color:white;
+}
+.job_content h1{
+    font-size: 25px;;
+}
+.job_content h2{
+    font-size: 20px;
+    color: blue;
+}
+.job_content{
+    padding-left: 20%;
+    border-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+
+.description{
+    width: 70%;
+    padding-left: 5%;
+    display:inline-block;
+}
+.WEbuttons{
+    display:block;
+}
+.job_content{
+    height: 500px;
+    width:80%;
+}
+}
+@media only screen and (min-width: 1000px) {
+.description{
+    width:45%;
+    padding-left:5%;
+    display:left;
+}
+.img-company{
+    visibility:visible;
+    width: 22%;
+    float:right;
+}
+}

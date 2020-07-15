@@ -1,0 +1,64 @@
+.img-fun{
+    width:200px;
+    height:200px;
+}
+.ECbuttons{
+        width:5%;
+        float: left;
+        display:none;
+}
+.button_fun{
+    width:150px;
+    height:55px;
+    padding-left: 0%;
+    background-color: none;
+    color: aquamarine;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  rgb(51, 51, 51);
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    padding-top: 0px;
+    font-weight: bold;
+}
+.button_fun:hover{
+    background-color:grey;
+    color:white;
+}
+.fun_content{
+    padding-left:20%;
+}
+#skydiving{
+    display: none;
+}
+#archery{
+    display:none;
+}
+#rock{
+    display:none;
+}
+#sichuan{
+    display:none;
+}
+@media only screen and (min-width: 768px) {
+
+    .description{
+        width: 70%;
+        padding-left: 5%;
+        display:inline-block;
+    }
+    .ECbuttons{
+        display:block;
+    }
+    }
+    @media only screen and (min-width: 1000px) {
+        .description{
+            width: 45%;
+            padding-left: 5%;
+            display:inline-block;
+        }
+    }
