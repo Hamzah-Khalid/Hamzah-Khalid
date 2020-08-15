@@ -1,19 +1,20 @@
 .img-fun{
     width:200px;
     height:200px;
+    display:none;
 }
 .ECbuttons{
         width:5%;
         float: left;
-        display:none;
+        display:block;
 }
 .button_fun{
-    width:150px;
-    height:55px;
+    width:100px;
+    height:40px;
     padding-left: 0%;
     background-color: none;
     color: aquamarine;
-    font-size: 18px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     background-color:  rgb(51, 51, 51);
     border-color: black;
@@ -30,10 +31,17 @@
     color:white;
 }
 .fun_content{
-    padding-left:20%;
+    padding-left:10%;
+    padding-top:150px;
+}
+.fun_content h1{
+    font-size: 20px;
+}
+.fun_content p{
+    font-size: 15px;
 }
 #skydiving{
-    display: none;
+    display:none;
 }
 #archery{
     display:none;
@@ -45,20 +53,50 @@
     display:none;
 }
 @media only screen and (min-width: 768px) {
-
+    .img-fun{
+        display:block;
+    }
     .description{
         width: 70%;
         padding-left: 5%;
         display:inline-block;
+        font-size: 16px;
     }
     .ECbuttons{
         display:block;
     }
+    .fun_content{
+        padding-top:180px;
+    }
+    .button_fun{
+        width:150px;
+        height:55px;
+        font-size: 20px;
+    }
     }
     @media only screen and (min-width: 1000px) {
         .description{
-            width: 45%;
-            padding-left: 5%;
+            width: 55%;
+            padding-left: 0%;
             display:inline-block;
+        }
+        .img-fun{
+            float:right;
+        }
+        .fun_content{
+            padding-top: 0px;
+        }
+        #skydiving{
+                padding-left: 100px;
+                padding-top: 0%;
+        }
+        #archery{
+            padding-left: 100px;
+        }
+        #sichuan{
+            padding-left: 100px;
+        }
+        #rock{
+            padding-left: 100px;
         }
     }

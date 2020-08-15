@@ -1,14 +1,14 @@
 .job{
     float:left;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .time{
     float:left;
     display:block;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .description{
-    width: 400px;
+    width: 300px;
 
 }
 .img-company{
@@ -28,16 +28,15 @@
 .REbuttons{
     width:10%;
     float: left;
-    display:none;
-    padding-top: 50px;
+    padding-top: 0px;
 }
 .button_relevant{
-    width:150px;
-    height:55px;
+    width:100px;
+    height:40px;
     padding-left: 0%;
     background-color: none;
     color: aquamarine;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color:  rgb(51, 51, 51);
     border-color: black;
@@ -54,41 +53,61 @@
     color:white;
 }
 .job_content h1{
-    font-size: 25px;;
+    font-size: 20px;;
 }
 .job_content h2{
-    font-size: 20px;
+    font-size: 18px;
     color: blue;
+}
+.job_content p{
+    font-size:13px;
 }
 .job_content{
     padding-left: 20%;
+    padding-top:120px;
     border-color: black;
 }
 
 @media only screen and (min-width: 768px) {
 
-.description{
-    width: 70%;
-    padding-left: 5%;
-    display:inline-block;
-}
-.REbuttons{
-    display:block;
-}
-.job_content{
-    height: 500px;
-    width:80%;
-}
+    .description{
+        width: 70%;
+        padding-left: 5%;
+        display:inline-block;
+    }
+    .REbuttons{
+        display:block;
+    }
+    .job_content{
+        height: 500px;
+        width:80%;
+        padding-top: 0px;
+        padding-left: 40%;
+    }
+    .button_relevant{
+        font-size: 20px;
+        width:150px;
+        height:55px;
+    }
+    .job_content p{
+        font-size: 17px;
+    }
 }
 @media only screen and (min-width: 1000px) {
-.description{
-    width:45%;
-    padding-left:5%;
-    display:left;
-}
-.img-company{
-    visibility:visible;
-    width: 22%;
-    float:right;
-}
+    .description{
+        width:50%;
+        padding-left:5%;
+        display:left;
+    }
+    .img-company{
+        visibility:visible;
+        width: 27%;
+        float:right;
+    }
+    .job_content{
+        padding-left: 20%;
+    }
+    .job_content p{
+        font-size: 20px;
+    }
 }

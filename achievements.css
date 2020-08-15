@@ -1,11 +1,15 @@
 .img-achievements{
     width:200px;
     height:200px;
+    display:none;
 }
 .Abuttons{
         width:5%;
         float: left;
         display:none;
+}
+#heading1{
+    padding-left: 40px;
 }
 .button_achievements{
     width:150px;
@@ -30,24 +34,52 @@
     color:white;
 }
 .achievements_content{
-    padding-left:20%;
+    padding-left:10%;
+}
+.achievements_content p{
+    font-size: 15px;
+}
+.achievements_content h1{
+    font-size: 20px;
+}
+.achievements_content h2{
+    font-size: 18px;
+    color:rgb(4, 235, 252);
 }
 #dofe{
-    display: none;
+    display: block;
+    width:100%;
+    padding-top:0px;
+
 }
 #imeche{
-    display:none;
+    display: block;
+    width:100%;
+    padding-top:0px;
 }
 
+.heading1{
+    color:aquamarine;
+    padding-left: 20%;
+}
 @media only screen and (min-width: 768px) {
 
     .description{
         width: 70%;
-        padding-left: 5%;
         display:inline-block;
     }
     .Abuttons{
         display:block;
+    }
+    #imeche{
+        display:none;
+    }
+    #dofe{
+        display:none;
+    }
+    .achievements_content{
+        padding-left: 15%;
+        padding-top: 15%;
     }
     }
     @media only screen and (min-width: 1000px) {
@@ -55,5 +87,8 @@
             width: 45%;
             padding-left: 5%;
             display:inline-block;
+        }
+        .img-achievements{
+            display:block;
         }
     }
