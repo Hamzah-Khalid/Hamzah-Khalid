@@ -2,19 +2,20 @@
     width:200px;
     height:200px;
     display:none;
+    padding-right: 20px;
 }
 .ECbuttons{
-        width:5%;
+        width:90%;
         float: left;
         display:block;
 }
 .button_fun{
-    width:100px;
-    height:40px;
+    width:60px;
+    height:30px;
     padding-left: 0%;
     background-color: none;
-    color: aquamarine;
-    font-size: 12px;
+    color:rgb(4, 235, 252);
+    font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     background-color:  rgb(51, 51, 51);
     border-color: black;
@@ -25,6 +26,7 @@
     cursor: pointer;
     padding-top: 0px;
     font-weight: bold;
+    vertical-align: middle;
 }
 .button_fun:hover{
     background-color:grey;
@@ -32,13 +34,17 @@
 }
 .fun_content{
     padding-left:10%;
-    padding-top:150px;
+    padding-top:20px;
+
 }
-.fun_content h1{
+.fun_content h2{
     font-size: 20px;
+    color:rgb(51, 51, 51);
+    padding-left: 0%;
 }
-.fun_content p{
+.ECdescription{
     font-size: 15px;
+    color: rgb(77, 77, 77);
 }
 #skydiving{
     display:none;
@@ -52,11 +58,23 @@
 #sichuan{
     display:none;
 }
+.ECmain h1{
+    color:black;
+    padding-left: 10%;
+}
+.ECmain{
+    padding-top: 300px;;
+}
+.ECcontainer{
+    border-color: black;
+    background-color: rgb(223, 223, 223);
+    height:320px;
+}
 @media only screen and (min-width: 768px) {
     .img-fun{
         display:block;
     }
-    .description{
+    .ECdescription{
         width: 70%;
         padding-left: 5%;
         display:inline-block;
@@ -64,6 +82,7 @@
     }
     .ECbuttons{
         display:block;
+        width:5%;
     }
     .fun_content{
         padding-top:180px;
@@ -74,11 +93,12 @@
         font-size: 20px;
     }
     }
-    @media only screen and (min-width: 1000px) {
-        .description{
+@media only screen and (min-width: 1000px) {
+        .ECdescription{
             width: 55%;
             padding-left: 0%;
             display:inline-block;
+            font-size:20px;
         }
         .img-fun{
             float:right;

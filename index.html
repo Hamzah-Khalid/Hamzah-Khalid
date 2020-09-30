@@ -6,41 +6,318 @@
 <meta name="viewport" content="width=device-width", initial-scale="1.0">
 <!---styles-->
 <link rel="stylesheet" href="format.css">
+<link rel="stylesheet" href="extracurricular.css">
+<link rel="stylesheet" href="workexperience.css">
+<link rel="stylesheet" href="achievements.css">
+<link rel="stylesheet" href="blog.css">
+<link rel="stylesheet" href="relevantexperience.css">
     <div id="left" class="container-left">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="Logo" class="button1">
         <a id="email" href="mailto:hamzahkhalid123@gmail.com" class="button1"> <img src="email.png" alt="email" class="img-email"></a>
         <a id="linkedin" href="https://www.linkedin.com/in/hamzah-khalid-28ab17146/" target ="_blank"  class="button1"><img src="linkedin.jpg" alt="linkedin" class="img-linkedin"></a>
 
     </div>
     <div id="list" class="container">
-        <a id="C.V" href="workexperience.html" class="button"> C.V.</a>
-        <a id="Achievements" href="achievements.html" class="button"> Achievements</a>
-        <a id="Extracurricular" href="extracurricular.html" class="button"> Extra Curricular</a>
-        <a id="workexperience" href="workexperience.html" class="button"> Other experience</a>
-        <a id="relevant experience" href="relevantexperience.html" class="button"> Relevant experience</a>
-        <a id="blog" href="blog.html" class="button"> Blog</a>
-        <a id="aboutme" href="index.html" class="button"> About me</a>
+        <a id="C.V" target ="_blank" href="IB new.pdf" class="button"> C.V.</a>
+        <button class="button2" onclick="window.scroll(0,findPos(document.getElementById('Acontainer')))">Achievements</button>
+        <button class="button2" onclick="window.scroll(0,findPos(document.getElementById('ECcontainer')))">ExtraCurricular</button>
+        <button class="button2" onclick="window.scroll(0,findPos(document.getElementById('WEcontainer')))">Work Experience</button>
+        <button class="button2" onclick="window.scroll(0,findPos(document.getElementById('REcontainer')))">Relevant Experience</button>
+        <button class="button2" onclick="window.scroll(0,findPos(document.getElementById('ABcontainer')))">About Me</button>
     </div>
+<div class="popout_">
+    <img src="cvpic.webp" id="banner">
+    <div class="popout_list">
+    <img src="pop.png" onclick="displaylist()" id="open" class="pop">
+    <div id="popup">
+        <img src="exit.png" class="pop" onclick="closelist()">
+    <a id="C.V" target ="_blank" href="IB new.pdf" class="Pbutton"> C.V.</a>
+    <button class="Pbutton2" onclick="window.scroll(0,findPos(document.getElementById('Acontainer')))">Achievements</button>
+    <button class="Pbutton2" onclick="window.scroll(0,findPos(document.getElementById('ECcontainer')))">ExtraCurricular</button>
+    <button class="Pbutton2" onclick="window.scroll(0,findPos(document.getElementById('WEcontainer')))">Work Experience</button>
+    <button class="Pbutton2" onclick="window.scroll(0,findPos(document.getElementById('REcontainer')))">Relevant Experience</button>
+    <a id="aboutme" href="index.html" class="Pbutton"> About me</a>
+</div>
+</div>
+</div>
+<script>
+    function displaylist(){
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("open").style.display = "none";
+    }
+    function closelist(){
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("open").style.display = "block";
+    }
+
+</script>
 <title>Hamzah Khalid</title>
 </head>
 <body>
-<div class="main">
+<div class="ABmain"id="ABcontainer">
     <div class="container-main">
-    <h1 id="heading1" class="heading1">Hello, My name is Hamzah Khalid</h1>
-
-    <p id="intro" class="intro"></p>
+    <p1>Hello,</p1>
+    <p2> My name is </p2>
+    <p3>Hamzah Khalid</p3>
     <img src="me.png" alt="Hamzah" id="img-me">
+    <p id="intro" class="intro"></p>
     </div>
     <div class="further">
         <p id="main"></p>
     </div>
 </div>
 <script>
-document.getElementById("intro").innerHTML = "I am a final year Aeronautics and Astronautics students at the University of Southampton. I am a competent progammer with an interest in financial markets and financial modelling";
-document.getElementById("main").innerHTML ="I currently manage 2 virtual portfolios which have generated a 15% return during COVID-19, thanks to liquification in February and reinvestment into e-commerce such as Amazon and ASOS. I have also learnt about risk and its affect on stocks which has encouraged my diversification of my portfolio to cover ecommerce, retailers, real estate and even aviation. Aviation being the riskiest and only expected to be a long-term stock i.e. 5-year recovery."
+document.getElementById("intro").innerHTML = "I am a final year Aeronautics and Astronautics students at the University of Southampton. I am a competent programmer with an interest in financial markets and financial modelling";
+document.getElementById("main").innerHTML ="I currently manage 2 virtual portfolios which have generated a 43% return during COVID-19, thanks to liquification in February and reinvestment into e-commerce such as Amazon, ASOS and Salesforce. I have also learnt about risk and its effect on stocks which has encouraged my diversification of my portfolio to cover ecommerce, retailers, real estate and even aviation. Aviation being the riskiest and only expected to be a long-term stock i.e. 5-year recovery."
 </script>
 
 
+<div id="content" class="REmain">
+    <div id="REcontainer" class="REcontainer">
+        <h1>Relevant Experience</h1>
+        <div class="REbuttons">
+            <ul>
+                <button id="zurich1_button" class="button_relevant" onclick=displayzurich1()>Zurich Insurance</button>
+                <button id="bright_button" class="button_relevant" onclick=displaybright()>Bright Network</button>
+                <button id="sherpa_button" class="button_relevant" onclick=displaysherpa()>Inside Sherpa</button>
+            </ul>
 
+        </div>
+        <div class="job_content">
+            <div id="zurich1">
+                <img src="zurich.png" alt="Zurich Insurance" class="img-company" id="img-zurich">
+                <h2>Zurich Insurance-Insight experience</h2>
+                <h3>June- July 2017</h3>
+                <p class= "description">
+                    Developed my understanding of the financial sector and improved time management and planning skills by planning and completing projects within a short amount of time such as a fund-raising effort for charity which was completed in a day.
+                </p> 
+            </div>
+            <div id="bright">
+                <img src="bright.jpg" alt="Bright Network" class="img-company" id="img-bright">
+                <h2>Bright Network-Internship experience</h2>
+                <h3>July 2020</h3>
+                <p class= "description">
+                    Completed 3 internship experiences in investment banking, technology and finance and professional services. During this time, I developed a deeper understanding of the financial sector and improved my commercial awareness.
+                </p> 
+            </div>
+            <div id="sherpa">
+                <img src="sherpa.jpg" alt="sherpa" class="img-company" id="img-sherpa">
+                <h2>Inside Sherpa virtual internship</h2>
+                <h3>July 2020</h3>
+                <p class="description">
+                    To develop my understanding of data analytics, I completed an Inside Sherpa course from KPMG on data analytics which increased my understanding of an analyst’s job and skills required by an analyst such as good IT skills especially with excel. I also completed a course on investment banking and markets from Citi which developed my understanding of financial modelling and valuation of equities. I also developed my computer skills further predominantly in microsoft excel.
+                </p>
+            </div>
+            </div>
+</div>
+<script>
+    function displaysherpa() {
+    document.getElementById("sherpa").style.display = "none";
+    document.getElementById("bright").style.display = "none";
+    document.getElementById("zurich1").style.display = "none";
+    document.getElementById("sherpa").style.display = "block";
+    }
+  function displaybright() {
+    document.getElementById("sherpa").style.display = "none";
+    document.getElementById("bright").style.display = "none";
+    document.getElementById("zurich1").style.display = "none";
+    document.getElementById("bright").style.display = "block";
+  }
+  function displayzurich1() {
+    document.getElementById("sherpa").style.display = "none";
+    document.getElementById("bright").style.display = "none";
+    document.getElementById("zurich1").style.display = "none";
+    document.getElementById("zurich1").style.display = "block";
+  }
+</script>
+
+<div id="content" class="WEmain">
+    <div id="WEcontainer" class="WEcontainer">
+        <h1>Other Work Experience</h1>
+        <div class="WEbuttons">
+            <ul>
+                <button id="Argos_button" class="button_jobs" onclick=displayargos()>Argos</button>
+                <button id="zurich_button" class="button_jobs" onclick=displayzurich()>Zurich Insurance</button>
+                <button id="homebase_button" class="button_jobs" onclick=displayhomebase()>Homebase</button>
+            </ul>
+
+        </div>
+        <div class="job_content">
+            <div id="argos">
+            <img  src="argos.png" alt="argos" class="img-company" id="img-argos">
+            <h2>Warehouse assistant at Argos</h2>
+            <h3>Apr 2020- Present</h3>
+                <p class="description">
+                    Developed time management and adaptability skills whilst working during the COVID-19 pandemic. Working full time managing the increase workload of 1000 orders per day, a 400% increase when compared to average pre-COVID-19 workload, whilst also studying my final semester from home.
+                </p>
+            </div>
+            <div id="zurich">
+                <img src="zurich.png" alt="Zurich Insurance" class="img-company" id="img-zurich">
+                <h2>Zurich Insurance-Insight experience</h2>
+                <h3>June- July 2017</h3>
+                <p class= "description">
+                    Developed my understanding of the financial sector and improved time management and planning skills by planning and completing projects within a short amount of time such as a fund-raising effort for charity which was completed in a day.
+                </p> 
+            </div>
+            <div id="homebase">
+                <img src="homebase.jpg" alt="Homebase" class="img-company" id="img-homebase">
+                <h2>Homebase-Cashier</h2>
+                <h3>Apr-Oct 2017</h3>
+                <p class="description">
+                    Completed upwards of 500 transactions per day and offered support and advice to customers like helping them find and match paint colours. Worked on weekends during my A-Levels, developed time management whilst working and revising for exams.
+                </p>
+            </div>
+            </div>
+</div>
+<script>
+    function displayargos() {
+    document.getElementById("argos").style.display = "none";
+    document.getElementById("homebase").style.display = "none";
+    document.getElementById("zurich").style.display = "none";
+    document.getElementById("argos").style.display = "block";
+    }
+  function displayhomebase() {
+    document.getElementById("argos").style.display = "none";
+    document.getElementById("homebase").style.display = "none";
+    document.getElementById("zurich").style.display = "none";
+    document.getElementById("homebase").style.display = "block";
+  }
+  function displayzurich() {
+    document.getElementById("argos").style.display = "none";
+    document.getElementById("homebase").style.display = "none";
+    document.getElementById("zurich").style.display = "none";
+    document.getElementById("zurich").style.display = "block";
+  }
+</script>
+
+
+<div id="content" class="ECmain">
+    <div id="ECcontainer" class="ECcontainer">
+        <h1>ExtraCurricular Activities</h1>
+        <div class="ECbuttons">
+            <ul>
+                <button id="skydiving_button" class="button_fun" onclick=displayskydiving()>skydiving</button>
+                <button id="archery_button" class="button_fun" onclick=displayarchery()>Archery</button>
+                <button id="rock_button" class="button_fun" onclick=displayrock()>Rock climbing</button>
+                <button id="sichuan_button" class="button_fun" onclick=displaysichuan()>Summer school</button>
+            </ul>
+
+        </div>
+        <div class="fun_content">
+            <div id="skydiving">
+            <img  src="img1.JPG" alt="skydiving" class="img-fun" id="img-skydiving">
+            <h2>Class A solo skydiver</h2>
+            <p class="ECdescription">
+                A class A qualified solo skydiver with 27 solo skydives. Skydiving requires a clear head even under immense pressure and when things go wrong.
+            </p>
+            </div>
+            <div id="rock">
+                <img src="" alt="Rock climbing" class="img-fun" id="img-rock">
+                <h2>Rock climbing</h2>
+                <p class="ECdescription">
+                    Developed discipline and problem-solving skills and analytical skills due to the need to analyse the holds and develop a solution and design a path to follow to reach the top.
+                </p> 
+            </div>
+            <div id="archery">
+                <img src="archery.jpg" alt="archery" class="img-fun" id="img-archery">
+                <h2>Member of SUAC archery team</h2>
+                <p class="ECdescription">
+                    Experienced barebow archer who competes for Southampton university against other universities.
+                </p>
+            </div>
+            <div id="sichuan">
+                <img src="sichuan.jpg" alt="Sichuan" class="img-fun" id="img-sichuan">
+                <h2>Summer school at sichuan university</h2>
+                <p class="ECdescription">
+                    Studied Quantum computing and aerospace propulsion at Sichuan university in China. Immersed myself in the Chinese culture developing an understanding of the differences between cultures.
+                </p>
+            </div>
+        </div>
+</div>
+<script>
+    function displayskydiving() {
+    document.getElementById("skydiving").style.display = "none";
+    document.getElementById("archery").style.display = "none";
+    document.getElementById("rock").style.display = "none";
+    document.getElementById("sichuan").style.display = "none";
+    document.getElementById("skydiving").style.display = "block";
+    }
+  function displayarchery() {
+    document.getElementById("skydiving").style.display = "none";
+    document.getElementById("archery").style.display = "none";
+    document.getElementById("rock").style.display = "none";
+    document.getElementById("sichuan").style.display = "none";
+    document.getElementById("archery").style.display = "block";
+  }
+  function displayrock() {
+    document.getElementById("skydiving").style.display = "none";
+    document.getElementById("archery").style.display = "none";
+    document.getElementById("rock").style.display = "none";
+    document.getElementById("sichuan").style.display = "none";
+    document.getElementById("rock").style.display = "block";
+  }
+  function displaysichuan() {
+    document.getElementById("skydiving").style.display = "none";
+    document.getElementById("archery").style.display = "none";
+    document.getElementById("rock").style.display = "none";
+    document.getElementById("sichuan").style.display = "none";
+    document.getElementById("sichuan").style.display = "block";
+  }
+</script>
+
+<div id="content" class="Amain">
+    <div id="Acontainer" class="Acontainer">
+        <h1>Achievements</h1>
+        <div class="Abuttons">
+            <ul>
+                <button id="dofe_button" class="button_achievements" onclick=displaydofe()>DofE</button>
+                <button id="imeche_button" class="button_achievements" onclick=displayimeche()>IMeche Award</button>
+            </ul>
+
+        </div>
+        <div class="achievements_content">
+            <div id="dofe">
+                <img src="dofe.png" alt="Duke of Edinburgh" class="img-achievements" id="img-dofe">
+                <h2>Duke of Edinburgh Award</h2>
+                <h3></h3>
+                <p class= "Adescription">
+                    I completed my silver DofE and am currently completing my Gold DofE award. During this time, I have volunteered to teach students in Mathematics helping them achieve above their predicted grades.
+                </p> 
+            </div>
+            <div id="imeche">
+                <img src="imeche.jpg" alt="IMeche" class="img-achievements" id="img-imeche">
+                <h2>IMeche BEng award</h2>
+                <h3>Queen Mary University of London</h3>
+                <p class="Adescription">
+                    Achieved 88% average in first year with over 97% in 3 modules. Achieved the highest grade of a cohort of 600 students and was awarded with the IMeche BEng award for my academic accomplishments.
+                </p>
+            </div>
+            </div>
+</div>
+<script>
+
+  function displayimeche() {
+    document.getElementById("imeche").style.display = "none";
+    document.getElementById("dofe").style.display = "none";
+    document.getElementById("imeche").style.display = "block";
+  }
+  function displaydofe() {
+    document.getElementById("dofe").style.display = "none";
+    document.getElementById("imeche").style.display = "none";
+    document.getElementById("dofe").style.display = "block";
+  }
+</script>
+
+<script>
+    function findPos(obj) {
+        var curtop = 0;
+        if (obj.offsetParent) {
+            do {
+                curtop += obj.offsetTop;
+            } while (obj = obj.offsetParent);
+        return [curtop];
+        }
+    }
+    </script>
 </body>
 </html>
